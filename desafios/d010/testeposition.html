@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste position</title>
+    <style>
+        :root{
+            --avo: rgb(199, 0, 0);
+            --pai:rgb(0, 199, 0);
+            --filho:rgb(0, 0, 134);
+
+            --static: static;
+            --fixed: fixed;
+            --sticky: sticky;
+            --relative: relative;
+            --absolute: absolute;
+        }
+        p{
+            line-height: 32px;
+        }
+        .pai{
+            background-color: var(--pai);
+            width: 300px;
+            height: 300px;
+            position: var(--sticky);
+            top: 2em;
+        }
+        .filho{
+            background-color: var(--filho);
+            width: 100px;
+            height: 100px;
+            position: var(--sticky);
+            top: 16px;
+        }
+        .teste2{
+            background-color: var(--avo);
+            width: 400px;
+            height: 400px;
+            position: var(--sticky);
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="teste2"></div>
+        <div class="pai">
+            <div class="filho"></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui libero alias maxime hic praesentium quaerat delectus aliquid consectetur consequatur voluptate optio, velit quasi exercitationem quae quis mollitia necessitatibus rerum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui libero alias maxime hic praesentium quaerat delectus aliquid consectetur consequatur voluptate optio, velit quasi exercitationem quae quis mollitia necessitatibus rerum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui libero alias maxime hic praesentium quaerat delectus aliquid consectetur consequatur voluptate optio, velit quasi exercitationem quae quis mollitia necessitatibus rerum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui libero alias maxime hic praesentium quaerat delectus aliquid consectetur consequatur voluptate optio, velit quasi exercitationem quae quis mollitia necessitatibus rerum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui libero alias maxime hic praesentium quaerat delectus aliquid consectetur consequatur voluptate optio, velit quasi exercitationem quae quis mollitia necessitatibus rerum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui libero alias maxime hic praesentium quaerat delectus aliquid consectetur consequatur voluptate optio, velit quasi exercitationem quae quis mollitia necessitatibus rerum.</p>
+        </div>
+
+</html>

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Oldlondon';
+    src: url('fonts/OldLondon.ttf'); 
+}
+@font-face {
+    font-family: 'MagicSchool';
+    src: url('fonts/MagicSchoolOne.ttf');
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+h1{
+    font-family: 'Oldlondon';
+    font-size: 2em;
+    font-weight: 600;
+}
+h2{
+    font-family: 'MagicSchool';
+    font-size: 2em;
+}
