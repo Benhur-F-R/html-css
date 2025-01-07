@@ -10,7 +10,28 @@
     --color1: rgb(0, 0, 0);
     --color2: rgb(255, 255, 255);
 }
-
+#firstlink{
+    color: white;
+    text-decoration: none;
+}
+#firstlink:hover{
+    text-decoration: underline;
+}
 body{
     min-width: 375px;
+}
+header{
+    color: var(--color2);
+    background-color: var(--color1);
+    padding: 0px 0px 20px 0px;
+    margin: -21px -8px 0px -8px;
+}
+header>h1{
+    padding: 0px;
+    font-family: 'Passion One';
+    font-size: 3em;
+    display: inline-block;
+}
+h1::first-letter{
+    font-size: 1.5em;
 }
