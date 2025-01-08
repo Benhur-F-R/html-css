@@ -23,9 +23,6 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
-a:hover{
-    text-decoration: underline;
-}
 header{
     color: var(--color2);
     background-color: var(--color1);
@@ -38,22 +35,17 @@ header>h1{
     display: inline-block;
     padding: 5px;
 }
-h1::first-letter{
-    font-size: 1.5em;
-}
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-}
-main{
-    max-width: 1500px;
-    min-height: 200px;
 }
 article{
     padding: 15px;
     margin: 15px;
     font-family: var(--font2);
     font-size: 1.5em;
+    min-width: 300px;
+    max-width: 500px;
 }
 footer{
     background-color: var(--color1);
@@ -63,4 +55,21 @@ footer{
 }
 footer>p{
     font: normal normal 500 1em Verdana, Geneva, Tahoma, sans-serif;
+}
+/* CLASSES:*/
+section.backimg1{
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+}
+article.txt{
+    background-color: var(--color3);
+    color: var(--color2);
+}
+/* PSEUDO-CLASSES */
+a:hover{
+    text-decoration: underline;
+}
+/* PSEUDO-ELEMENTOS */
+h1::first-letter{
+    font-size: 1.5em;
 }
