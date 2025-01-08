@@ -39,6 +39,10 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
 }
+section{
+    min-width: 300px;
+    min-height: 500px;
+}
 article{
     padding: 15px;
     margin: 15px;
@@ -60,10 +64,24 @@ footer>p{
 section.backimg1{
     background-image: url('imagens/background001.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    margin: -8px;
+    position: relative;
+}
+section.backimg2{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: -8px;
+    position: relative;
 }
 article.txt{
     background-color: var(--color3);
     color: var(--color2);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    bottom: 15%;
 }
 /* PSEUDO-CLASSES */
 a:hover{
