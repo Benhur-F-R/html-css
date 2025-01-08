@@ -6,15 +6,24 @@
     font-family: 'sriracha';
     src: url('Sriracha/Sriracha-Regular.ttf')
 }
+/* O QUE PRECISA SER FEITO
+1 AJEITAR A FONTE DOS LINKS;
+2 COLOCAR AS IMAGENS E EFEITO PARALLAX;
+3 AJEITAR A RESPONSIVIDADE;
+4 CENTRALIZAÇÃO DE TEXTOS
+*/
 :root{
     --color1: rgb(0, 0, 0);
     --color2: rgb(255, 255, 255);
+    --color3: rgba(0, 0, 0, 0.486);
+    --font1: 'Passion One';
+    --font2: 'sriracha';
 }
-#firstlink{
+a{
     color: white;
     text-decoration: none;
 }
-#firstlink:hover{
+a:hover{
     text-decoration: underline;
 }
 body{
@@ -27,11 +36,23 @@ header{
     margin: -21px -8px 0px -8px;
 }
 header>h1{
-    padding: 0px;
-    font-family: 'Passion One';
-    font-size: 3em;
+    font-family: var(--font1);
+    font-size: 2.5em;
     display: inline-block;
+    padding: 5px;
 }
 h1::first-letter{
     font-size: 1.5em;
+}
+article{
+    padding: 15px;
+    margin: 15px;
+    font-family: var(--font2);
+    font-size: 1.5em;
+}
+footer{
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 1px;
+    margin: 30px -8px -8px -8px;
 }
