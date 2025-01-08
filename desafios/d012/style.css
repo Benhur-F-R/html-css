@@ -7,7 +7,6 @@
     src: url('Sriracha/Sriracha-Regular.ttf')
 }
 /* O QUE PRECISA SER FEITO
-1 AJEITAR A FONTE DOS LINKS;
 2 COLOCAR AS IMAGENS E EFEITO PARALLAX;
 3 AJEITAR A RESPONSIVIDADE;
 4 CENTRALIZAÇÃO DE TEXTOS
@@ -22,12 +21,10 @@
 a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover{
     text-decoration: underline;
-}
-body{
-    min-width: 375px;
 }
 header{
     color: var(--color2);
@@ -44,6 +41,14 @@ header>h1{
 h1::first-letter{
     font-size: 1.5em;
 }
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+main{
+    max-width: 1500px;
+    min-height: 200px;
+}
 article{
     padding: 15px;
     margin: 15px;
@@ -55,4 +60,7 @@ footer{
     color: var(--color2);
     padding: 1px;
     margin: 30px -8px -8px -8px;
+}
+footer>p{
+    font: normal normal 500 1em Verdana, Geneva, Tahoma, sans-serif;
 }
