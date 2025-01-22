@@ -12,6 +12,13 @@
     table{
         border-collapse: collapse;
         width: 500px;
+        margin: auto;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: lightgray;
+        padding: 10px;
     }
     td, th{
         border: 1px solid black;
@@ -24,14 +31,18 @@
     .num{
         text-align: right;
     }
+    tbody > tr:nth-child(2n){
+        background-color: gray;
+    }
 </style>
 <body>
     <h1>Tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -146,7 +157,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total da população</th>
+                <th scope="row">Total da população</th>
                 <td class="num">212 583 720</td>
             </tr>
         </tfoot>
