@@ -13,6 +13,7 @@
         border-collapse: collapse;
         width: 500px;
         margin: auto;
+        position: relative;
     }
     caption{
         font-size: 1.5em;
@@ -28,11 +29,20 @@
         background-color: gray;
         color: white;
     }
+    thead > tr > th{
+        position: sticky;
+        top: 0;
+        background-color: gray;
+    }
     .num{
         text-align: right;
     }
-    tbody > tr:nth-child(2n){
+    tbody > tr:nth-child(even){
         background-color: gray;
+        font-weight: bold;
+    }
+    tbody > tr:not(:nth-child(even)){
+        text-decoration: underline;
     }
 </style>
 <body>
