@@ -9,15 +9,16 @@
     div{
         height: 500px;
         width: 500px;
-        /*animation: glowup 10s infinite;*/
+        animation: glowup 5s infinite;
+        animation-timing-function: step-end;
     }
     @keyframes glowup {
         from{
-            background-image: linear-gradient(180deg, red, orange, yellow);
+            background-color: blue;
         }
         to{
-            background-image: linear-gradient(180deg, green, blue, purple);
-        } 
+            background-color: orange;
+        }
     }
 </style>
 <body>
